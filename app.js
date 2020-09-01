@@ -1,13 +1,12 @@
-const validator = require('validator')
+const chalk = require('chalk')
 const getNotes = require('./notes')
 
-const msg = getNotes()
+const command = process.argv[2]
 
-console.log(msg)
+console.log(process.argv)
 
-console.log(validator.isURL(''))
-
-// const add = require('./utils')
-
-// const sum = add(4, -2)
-// console.log(sum)
+if (command === 'add') {
+    console.log('adding note')
+} else if (command === 'remove') {
+    console.log('removing note!')
+}
