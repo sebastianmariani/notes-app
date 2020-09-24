@@ -9,7 +9,7 @@ const addNote = (title, body) => {
     if (!duplicateNote) {
         notes.push({
             title: title,
-            body: ody
+            body: body
         })
         
         saveNotes(notes)
